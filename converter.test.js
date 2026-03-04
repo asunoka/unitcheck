@@ -53,3 +53,9 @@ test("boiling point: 100°C should equal 212°F", () => {
 test("1 Liter should equal 0.26 gallons rounded", () => {
   expect(litersToGallons(1)).toBe(0.26);
 });
+
+//Additional Test
+
+test("1000 kg should equal 2204.62 pounds rounded", () => {
+  expect(kgToPounds(1000)).toBe(2204.62);
+});
