@@ -1,4 +1,3 @@
-
 // =============================================================================
 //  UNIT CONVERTER — Testing Lab
 //  Intro to Code
@@ -12,7 +11,7 @@
 //  RED    ✗  = test failed — read the error to see what went wrong
 //
 //  Your job today is to fix the two broken tests (they fail on purpose)
-//   
+//
 //
 //
 // =============================================================================
@@ -40,16 +39,25 @@ test("zero km should return zero miles", () => {
 // ─────────────────────────────────────────────────────────────────────────────
 //  PART A — SOLVE THESE  (both currently FAILING — find the bug and fix it)
 //
-//  
+//
 //  Run the tests, read the error message, then fix the wrong number.
 //  When all turn green, the tests are passing.
 // ─────────────────────────────────────────────────────────────────────────────
 
 test("boiling point: 100°C should equal 212°F", () => {
-  expect(celsiusToFahrenheit(100)).toBe(212); 
+  expect(celsiusToFahrenheit(100)).toBe(212);
 });
-
 
 test("1 Liter should equal 0.26 gallons rounded", () => {
   expect(litersToGallons(1)).toBe(0.26);
+});
+
+//Additional Test
+
+test("1000 kg should equal 2204.62 pounds rounded", () => {
+  expect(kgToPounds(1000)).toBe(2204.62);
+});
+
+test("5 Liter should equal 1.32 gallons rounded", () => {
+  expect(litersToGallons(5)).toBe(1.32);
 });
